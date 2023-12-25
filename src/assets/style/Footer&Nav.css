@@ -1,0 +1,104 @@
+/***********************NavBar*****************************/
+.nav-header {
+  position: absolute;
+  margin: auto;
+  left: 45%;
+  right: 45%;
+  font-size: 2em !important;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+.nav-li-link {
+  margin: 0px 5px;
+}
+.nav-link {
+  display: inline-block;
+  position: relative;
+  color: #88ab8e;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 8px;
+  left: 10px;
+  margin: auto;
+  background-color: #88ab8e;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(0.7);
+  transform-origin: bottom left;
+}
+.nav-icon {
+  margin-right: 50px;
+
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.nav-icon-counter {
+  background-color: #88ab8e;
+  padding: 1px 5px;
+  position: absolute;
+  left: 15px;
+  bottom: 25px;
+  font-size: 10px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 992px) {
+  .nav-header {
+    margin: 0;
+    position: relative;
+    left: 0px;
+  }
+  .nav-hr {
+    margin-left: 0;
+  }
+  .nav-link:after {
+    width: 65px;
+    left: 0px;
+  }
+  .nav-icon {
+    display: block;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+}
+/***********************Footer**************/
+.Footer-Page {
+  background-color: #739072;
+  display: flex;
+  /* width: 100%; */
+  height: fit-content;
+}
+.footer-div {
+  padding-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.footer-logo {
+  font-size: 2em;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+div.footer-icons > * {
+  color: black;
+}
+/* .bg-test {
+  background-color: rebeccapurple;
+} */
